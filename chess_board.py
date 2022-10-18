@@ -5,17 +5,17 @@ Things a chessboard needs
 
 """
 
+import unicode_values
+
 class ChessBoard:
 
-    
-    w_sq = "\u25A0"
-    w_f_row = ["\u2659" for i in range(8)]
-    w_b_row = "R N B Q \u2654 B N R".split()
-    
-    b_sq = "\u25A1"
-    b_f_row = ["\u265F" for i in range(8)]
-    b_b_row = ["\u265F" for i in range(8)]
+    w_sq = unicode_values.w_sq
+    w_b_row = unicode_values.w_b_row
+    w_f_row = unicode_values.w_f_row
 
+    b_sq = unicode_values.b_sq
+    b_b_row = unicode_values.b_b_row
+    b_f_row = unicode_values.b_f_row
 
     def __init__(self,  w_sq=w_sq, b_sq=b_sq, 
                         w_b_row=w_b_row, w_f_row=w_f_row,
