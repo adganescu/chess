@@ -10,8 +10,8 @@ w_king = "\u2654"
 
 # White rows
 
-w_f_row = [w_pawn for i in range(8)] 
-w_b_row = [w_rook, w_knight, w_bishop, w_queen, w_king, w_bishop, w_knight, w_rook]
+w_f_row = ["2", w_pawn, w_pawn, w_pawn, w_pawn, w_pawn, w_pawn, w_pawn, w_pawn, "2"] 
+w_b_row = ["1", w_rook, w_knight, w_bishop, w_queen, w_king, w_bishop, w_knight, w_rook, "1"]
 
 # Black pieces and square
 
@@ -25,6 +25,6 @@ b_king = "\u265A"
 
 # Black rows
 
-b_f_row = [b_pawn for i in range(8)] 
-b_b_row = [b_rook, b_knight, b_bishop, b_queen, b_king, b_bishop, b_knight, b_rook]
+b_f_row = ["7", b_pawn, b_pawn, b_pawn, b_pawn, b_pawn, b_pawn, b_pawn, b_pawn, "7"] 
+b_b_row = ["8", b_rook, b_knight, b_bishop, b_queen, b_king, b_bishop, b_knight, b_rook, "8"]
 

@@ -1,14 +1,6 @@
-# Chessboard.py
-
-"""
-Things a chessboard needs
-
-"""
-
 import unicode_values
 
 class ChessBoard:
-
     w_sq = unicode_values.w_sq
     w_b_row = unicode_values.w_b_row
     w_f_row = unicode_values.w_f_row
@@ -20,7 +12,9 @@ class ChessBoard:
     def __init__(self,  w_sq=w_sq, b_sq=b_sq, 
                         w_b_row=w_b_row, w_f_row=w_f_row,
                         b_b_row=b_b_row, b_f_row=b_f_row):
+        
         self.board = [    
+            ["a", "b", "c", "d", "e", "f", "g", "f"],
             b_b_row,
             b_f_row,
             [w_sq, b_sq, w_sq, b_sq, w_sq, b_sq, w_sq, b_sq],
@@ -28,7 +22,8 @@ class ChessBoard:
             [w_sq, b_sq, w_sq, b_sq, w_sq, b_sq, w_sq, b_sq],
             [b_sq, w_sq, b_sq, w_sq, b_sq, w_sq, b_sq, w_sq],
             w_f_row,
-            w_b_row]
+            w_b_row,
+            ["a", "b", "c", "d", "e", "f", "g", "f"],]
 
     def __str__(self):
         
